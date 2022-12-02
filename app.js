@@ -31,7 +31,7 @@ app.use(`${api}/orders`, ordersRoutes);
 mongoose.connect(process.env.CONNECTION_STRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    dbName: 'ecommerce'
+    dbName: 'eshop-database'
 })
 .then(()=>{
     console.log('Database Connection is ready...')
@@ -42,6 +42,6 @@ mongoose.connect(process.env.CONNECTION_STRING, {
 
 //Server
 app.listen(3000, ()=>{
-console.log(api)
+
     console.log('server is running http://localhost:3000');
 })
