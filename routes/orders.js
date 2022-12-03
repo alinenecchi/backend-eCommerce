@@ -54,7 +54,7 @@ router.post("/", async (req, res) => {
         "price"
       );
 
-      const totalPrice = orderItem.product.price * orderItem.quantity;
+      const totalPrice = orderItem?.product?.price * orderItem?.quantity;
 
       return totalPrice;
     })
